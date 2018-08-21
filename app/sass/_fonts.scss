@@ -1,6 +1,9 @@
 @import "_mixins/font-face";
 
 @include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Regular/HelveticaNeueCyr-Regular", normal);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light", 300);
 @include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Black/HelveticaNeueCyr-Black", 900);
 @include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Medium/HelveticaNeueCyr-Medium", 500);
 @include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/RegularItalic/HelveticaNeueCyr-RegularItalic", normal, italic);
+@include font-face("Montserrat", "../fonts/Montserrat/Light/Montserrat-Light", 300);
+@include font-face("Montserrat", "../fonts/Montserrat/Regular/Montserrat-Regular", normal);

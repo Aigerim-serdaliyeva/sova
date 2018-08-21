@@ -134,6 +134,13 @@
   }
 
   .s {
+    &-main {
+      &__title {
+        font-size: 27px;
+        margin-bottom: 50px;
+      }
+    }
+
     &-thanks {
       padding: 150px 0 50px;
       

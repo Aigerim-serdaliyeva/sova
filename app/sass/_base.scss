@@ -240,12 +240,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .input, .textarea {
   color: $text_color;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: Montserrat, serif;
   line-height: inherit;
-  border: 1px solid $accent;
+  border: 1px solid $gray;
+  border-radius: 20px;
   background-color: transparent;
-  font-family: $default_family, sans-serif;
-  padding: 11px 20px 11px 35px;   
+  // font-family: $default_family, sans-serif;
+  padding: 7px 20px 7px 15px;   
 
   &.error {
     border-color: red;
@@ -265,17 +267,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	&::-webkit-input-placeholder {
-    color: #000;
+    color: $gray;
 		opacity: 1;
 	}
 	
 	&::-moz-placeholder {
-    color: #000;
+    color: $gray;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-    color: #000;
+    color: $gray;
 		opacity: 1;
   }
   
@@ -310,9 +312,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .form {
   position: relative;  
+  font-family: Montserrat, serif;
     
   &__title {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: $accent;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -323,13 +328,19 @@ h1, h2, h3, h4, h5, h6 {
 
   &__info {
     font-size: 10px;
+    color: $gray;
     text-align: left;
+    font-style: italic;
   }
 
   &--horizontal {
-    .form {
+    background-color: rgba($black, .8);
+    max-width: 1006px;
+    margin: 0 auto;
+    padding: 20px;
+    .form {     
       &__content, &__info {
-        max-width: 800px;
+        max-width: 610px;
         margin: 0 auto;
       }
 

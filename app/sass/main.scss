@@ -9,6 +9,22 @@
   flex-direction: column;
 }
 
+.srok {
+  display: flex;
+  max-width: 380px;
+  align-items: center;
+  margin: 10px auto 0;
+  font-family: Montserrat, serif;
+  &__title {
+    color: #fff;
+    margin-right: 15px;
+  }
+  .timer-flipchart-inner {
+    font-family: Montserrat, serif;
+    font-weight: bold;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -131,12 +147,14 @@
     line-height: 1.5;
     text-decoration: none;
     font-weight: normal;
-    border-left: 1px solid transparent;
-    padding-left: 5px;
+    border-left: 2px solid transparent;
+    padding-left: 7px;
+    position: relative;
 
     &.link {
       &:hover, &.active {
-        border-left: 2px solid $accent;
+        background-image: url("../img/line.jpg");
+        background-repeat: no-repeat;
         color: #a1a1a1;
       }
     }
@@ -161,41 +179,44 @@
   }
 }
 
-.s {
-  &-main {
-    padding-top: 150px;
-    background-image: url('../img/main-back.jpg');
 
-    &-title {
-      font-size: 39px;
-      margin: 0 0 35px 0;
-      text-align: left;
-      font-weight: bold;
-    }
-  }
+.s-main {
+  padding-top: 150px;
+  background-image: url('../img/main-back.jpg');
 
-  &-thanks {
-    padding: 200px 0 100px 0;
-    flex-grow: 1;
-      
-    &__title {
-      color: $accent;
-      font-size: 48px;
-      font-weight: normal;
-      margin-bottom: 30px;
-    }
-
-    &__text {
-      font-size: 24px;
-      margin: 0 0 125px;
-    }
-  
-    &__link {
-      text-decoration: underline;
-      color: $accent;
-    }
+  &__title {
+    font-size: 36px;
+    font-family: Montserrat, serif;
+    margin: 0 auto 155px;
+    color: #fff;
+    font-weight: normal;
+    max-width: 940px;
+    text-align: center;
   }
 }
+
+.s-thanks {
+  padding: 200px 0 100px 0;
+  flex-grow: 1;
+    
+  &__title {
+    color: $accent;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin: 0 0 125px;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $accent;
+  }
+}
+
 
 
 @import './_media';
