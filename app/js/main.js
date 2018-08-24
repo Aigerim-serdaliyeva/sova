@@ -160,6 +160,19 @@ $(document).ready(function () {
     }
   });
 
+  $(".carousel-work").owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    smartSpeed: 500,
+    margin: 15,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 2, mouseDrag: false, },
+      576: { items: 4, mouseDrag: true,},
+    },
+  });
+
   $(".carousel-creat").owlCarousel({
     loop: true,
     nav: true,

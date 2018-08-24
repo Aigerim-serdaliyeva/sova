@@ -208,6 +208,29 @@
 
 .s-work {
 
+  .carousel-work {
+    .owl {
+      &-prev, &-next {
+        position: absolute;
+        top: 0;
+        background-color: $accent !important;
+        background-size: auto !important;
+        height: 100%;
+      }
+
+      &-prev {
+        left: 0;
+        background-image: url('../img/prev.png') !important;
+      }
+
+      &-next {
+        right: 0;
+        background-image: url('../img/next.png') !important;
+      }
+    }
+  }
+
+  
 }
 
 .s-creat {
