@@ -157,7 +157,13 @@
   .s {
     &-main {
       
-    } 
+    }
+
+    &-work {
+      .video__container--first {
+        margin-bottom: 30px;
+      }
+    }
 
     &-creat {
       &__content {
@@ -185,6 +191,14 @@
   .header {
     &__title {
       display: none;
+    }
+  }
+
+  .video {
+    &__title {
+      position: static;
+      width: 100%;
+      height: 30px;
     }
   }
 
