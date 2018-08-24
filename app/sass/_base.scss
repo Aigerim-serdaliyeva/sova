@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .input, .textarea {
-  color: $text_color;
+  color: #fff;
   font-size: 12px;
   font-family: Montserrat, serif;
   line-height: inherit;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 20px;
   background-color: transparent;
   // font-family: $default_family, sans-serif;
-  padding: 7px 20px 7px 15px;   
+  padding: 7px 15px;   
 
   &.error {
     border-color: red;
@@ -263,7 +263,8 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     text-align: left;
     color: red;
-    padding-left: 35px;
+    font-size: 12px;
+    padding-left: 15px;
     margin-top: 5px;
 	}
 
