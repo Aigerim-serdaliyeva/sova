@@ -69,6 +69,46 @@
 
   .s {
     
+    &-creat {
+      &__quiz {
+        display: block;
+        &__title {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .button {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    &-comand {
+      .comand {
+        display: block;
+        margin-bottom: 25px;
+        &__img {
+          margin: 0 auto 10px;
+        }
+        &__block {
+          margin-bottom: 15px;
+        }
+        &__name {
+          text-align: center;
+        }
+        &__summary {
+          text-align: center;
+        }
+        .button {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+      &__img {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
   }
 }
 
@@ -118,6 +158,21 @@
     &-main {
       
     } 
+
+    &-creat {
+      &__content {
+        display: none;        
+      }
+      .carousel-creat {
+        display: block;
+        margin-bottom: 20px;
+      }
+      &__quiz {
+        &__title {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 
@@ -138,6 +193,17 @@
       &__title {
         font-size: 27px;
         margin-bottom: 50px;
+      }
+    }
+
+    &-comand {
+      &__img {
+        // flex-wrap: nowrap;
+        img {
+          // width: 50%;
+          width: 130px;
+          height: 100%;
+        }
       }
     }
 
