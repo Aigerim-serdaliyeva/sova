@@ -54,19 +54,19 @@
               <div class="container">
                 <ul>
                   <li>                                                                       
-                    <a class="link" href="#main">Портфолио</a>
+                    <a class="link" href="#work">Портфолио</a>
                   </li>
                   <li>
-                    <a class="link" href="#service">Виды роликов и цены</a>
+                    <a class="link" href="#creat">Виды роликов и цены</a>
                   </li>
                   <li>
-                    <a class="link" href="#">О команде</a>
+                    <a class="link" href="#comand">О команде</a>
                   </li>
                   <li>
-                    <a class="link" href="#">Отзывы</a>
+                    <a class="link" href="#reviews">Отзывы</a>
                   </li>
                   <li class="last">
-                    <a class="link" href="#">Организация мероприятий</a>
+                    <a class="link" href="#event">Организация мероприятий</a>
                   </li>
                   <li class="d-lg-none">
                     <a href="tel:+77012043618" class="text-phone" id="phone_number">+7 701 204-36-18</a>
@@ -122,7 +122,7 @@
       </div>
     </section>
 
-    <section class="section s-work">
+    <section class="section s-work" id="work">
       <div class="container">
         <div class="section-title">Наши работы</div>
 
@@ -155,7 +155,7 @@
       </div>
     </section>
 
-    <section class="section s-creat">
+    <section class="section s-creat" id="creat">
       <div class="container">
         <div class="section-title inverse">Мы создаем:</div>
         <div class="row justify-content-center s-creat__content">
@@ -275,7 +275,7 @@
       </div>
     </section>
 
-    <section class="section s-comand">
+    <section class="section s-comand" id="comand" >
       <div class="container">
         <h2 class="section-title">О команде "SOVA studio production"</h2>
         <div class="row">
@@ -292,7 +292,7 @@
                 <div class="comand__summary">Сооснователь "SOVA studio production" и главный идейный вдохновитель</div>
                 <div class="comand__text">“Все было новым, интересным и абсолютно не соответствовало моей будущей специальности  – банковский сотрудник, финансист. Но мне безумно нравилось…снимать, искать кадры, монтировать, подбирать музыку...”</div>
               </div>
-              <button class="button"> Необычная история  <br>
+              <button class="button" data-remodal-target="more-1"> Необычная история  <br>
                 о взлетах и падениях <br>
                 на пути к мечте</button>
             </div>
@@ -303,7 +303,7 @@
                 <div class="comand__summary">Сооснователь "SOVA studio production" и мотиватор команды</div>
                 <div class="comand__text">"Видеопродакшн- это не только перспективное творческое направление, но и очень продуктивный вид бизнеса, несмотря на высокую конкурентность"</div>
               </div>
-              <button class="button">О том, как камера может <br>
+              <button class="button" data-remodal-target="more-2">О том, как камера может <br>
                 стать близким другом</button>
             </div>
             <div class="comand">
@@ -313,7 +313,7 @@
                 <div class="comand__summary"> видеограф, режиссер постановщик</div>
                 <div class="comand__text">...это сильно утомляло, но понимал, что мне был необходим этот опыт, чтобы отточить свое мастерство в качестве оператора"</div>
               </div>
-              <button class="button">О том, как камера может <br>
+              <button class="button" data-remodal-target="more-3">О том, как камера может <br>
                 стать близким другом</button>
             </div>
           </div>
@@ -383,7 +383,7 @@
       </div>
     </section>
 
-    <section class="section s-reviews">
+    <section class="section s-reviews" id="reviews">
       <div class="container">
         <div class="section-title">Отзывы</div>
         <div class="owl-carousel carousel-review">
@@ -399,7 +399,103 @@
               <source src="movie.ogg" type="video/ogg">
             </video>
           </div>
-          
+
+          <div class="review">
+            <img src="./img/review-1.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Санжар Жубанов</div>
+              <div class="review__summary">Тренер по боевым искусствам с 30-летним стажем, специалист по наскальным рисункам.</div>
+              <div class="review__text">С ребятами из студии "Сова" я встретился через Абзала на первом уроке игры на домбре. Мы стали рассказывать друг другу о себе. И Абзал спросил, смогу ли я рассказать о себе в камеру. Я ответил, что да ! Через несколько дней я познакомился с Меруерт. Тогда же мне дали микрофон, поставили камеру. Я сел удобнее и Читать далее</div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="review">
+            <img src="./img/review-3.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Нарегеев Р.Г.</div>
+              <div class="review__summary">куратор галереи "Арт Перекресток"</div>
+              <div class="review__text">Художественная галерея "Арт Перекресток" выражает свою благодарность sova_studio_production. Позитивный настрой и профессионализм в этой команде позволяет реализовывать творческие проекты на высоком уровне. Полное сопровождение клиента способствует плодотворному сотрудничеству. Надеемся и в будущем поддерживать дружеские и деловые взаимоотношения.</div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="review">
+            <img src="./img/review-4.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Жубанова Инкара</div>
+              <div class="review__summary">флейтистка, участница квартета флейт "Nami"</div>
+              <div class="review__text">Благодаря "Sova studio production" мы успешно провели концерт нашего флейтового квартета "Nami". "Sova studiо production" не только помогли нам с организацией, но и сняли великолепный ролик с концерта. Сотрудники студии работают быстро и качественно, учитывая пожелания артиста, и умея показать его лучшие стороны. Большое им за это спасибо!</div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="review">
+            <img src="./img/review-5.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Юрий Леонов</div>
+              <div class="review__summary">музыкант (перкуссионист), преподователь, артист, участник группы ударных
+                инструментов "BugaraBu"  </div>
+              <div class="review__text">Всегда очень приятно проводить совместные проекты со студией "Сова"! На нашем совместном счету несколько местер-классов по ударным инструментам и моё участие в видео-программе "Мысль". 
+                Хочется отметить профессионализм и самоотдачу со стороны "Совы". А также позитивный настрой, гибкость и увлеченность. Это очень важно!!!
+                Жду новых совместных свершений!!!</div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="review">
+            <img src="./img/review-6.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Этнофольклорный ансамбль "Туран"  </div>
+              <!-- <div class="review__summary"></div> -->
+              <div class="review__text">Совместные проекты с коллективом "Сова студия продакшн" принесли нам очень плодотворные результаты. Организация концерта прошла на высшем уровне, готовый видеоотчет был выполнен быстро и качественно. Ребята заинтересовали нас своим профессионализмом и креативным подходом. Этнофольклорный ансамбль "Туран" желает молодой команде творческих успехов, достижения поставленных целей, реализации всех идей и проектов и много благодарных клиентов и партнеров.      </div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="review">
+            <img src="./img/review-7.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Юрий Аравин</div>
+              <div class="review__summary">музыковед</div>
+              <div class="review__text">Работы "Совы", на мой взгляд, заслуживают высокой оценки. Примечательно то, что ребята предлагают очень широкий спектр услуг – видеопроизводство, организация концертов, мероприятий, мастер- классов. Материалы, предоставленные компанией "Сова" можно смело использовать на телевидении. Очень приятно и хорошо, что организация мастер-классов и концертов является хорошей площадкой для знакомства между музыкантами, художниками, писателями.</div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>
+
+          <div class="review">
+            <img src="./img/review-8.jpg" alt="">
+            <div class="review__content">
+              <div class="review__name">Группа "Хазар"</div>
+              <!-- <div class="review__summary"></div> -->
+              <div class="review__text">Нашей группе очень повезло, что "Сова" откликнулась на нашу просьбу о сотрудничестве. На сегодняшний день новым группам очень сложно пробиваться на музыкальный рынок Республики Казахстан. 
+                Благодаря организации концертов и хорошему видеосопровождению от "Совы" мы смогли заявить о себе! <br> <br>
+                
+                Спасибо, ребята, большое, до новых встреч и совместных проектов!      </div>
+            </div>
+            <video width="360" height="175" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            </video>
+          </div>                   
           
         </div>
         <div class="form form--horizontal wow slideInUp">
@@ -432,9 +528,127 @@
       </div>
     </section>
 
+    <section class="section s-events" id="event">
+      <div class="container">
+        <h2 class="section-title">Организация мероприятий</h2>
+        <div class="s-events__title">С участием известных артистов из Казахстана, покоривших сцены США, (Нью-Йорк) - "Карнеги Холл"; <br>
+          Великобритании, (Лондон) - "Альберт Холл"; Германии, (Берлин) - "Концерт Хаус"; России, (Москва) - "Кремль".</div>
 
+        <div class="owl-carousel carousel-event">
+          <div class="s-events__content">
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-1.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Этнофольклорный ансамбль 
+                  Туран”</div>
+                <div class="event__text">Оригинальность и самобытность коллектива становятся очевидны с первых нот композиций в исполнении ансамбля. Используя возможности световой и звуковой техники, музыканты легко воссоздают на сцене образы прошлого и настоящего.</div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-2.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">MEJ - модерн этно-джаз
+                  группа «STEPPE SONS»
+                  - «Сыновья Степи»</div>
+                <div class="event__text">Используя возможности свето-видео сопровождения и звукоусиливающей техники, «Сыновья Степи» создают образы и незабываемые картины прошлого и настоящего, вы прочувствуете настоящий дух кочевника и тонкий стиль джазового исполнения!  </div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-3.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Этнофьюжн группа “Хазар”</div>
+                <div class="event__text">Сочетание традиционной культуры и новой модной музыки. Оригинальная современная интерпретация полюбившихся мотивов.</div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-4.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Юрий Леонов</div>
+                <div class="event__text">Юрий Леонов - профессиональный музыкант. Игре на барабанах он учился сначала в Алматы, а потом в Индии.Там он освоил игру на национальных инструментах - таблах. Также Юрий известен как участник фолк-группы «Paradox» и музыкальной группы «Бугарабу».</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <section class="section s-test">
+        <div class="form form--horizontal wow slideInUp">
+          <form action="/mail.php" method="post">
+            <div class="form__title">Оставьте заявку и получите на почту таблицу проводимых нами мастер-классов с указанием цен</div>
+            <div class="form__content">
+
+              <input type="hidden" name="info" value="Оставьте заявку и получите на почту таблицу проводимых нами мастер-классов с указанием цен">
+
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Введите имя">
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Введите e-mail*" required="">
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="polu4it_informasiu">Получить информацию</button>
+            </div>
+            <div class="form__info">*Ваши данные в безопасности и не будут переданы третьим лицам</div>
+          </form>                    
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-clients">
+      <div class="container">
+        <h2 class="section-title inverse">Наши клиенты</h2>
+        <div class="s-clients__content">
+          <div class="client"><img src="./img/client-1.png" alt=""></div>
+          <div class="client"><img src="./img/client-2.png" alt=""></div>
+          <div class="client"><img src="./img/client-3.png" alt=""></div>
+          <div class="client"><img src="./img/client-4.png" alt=""></div>
+          <div class="client"><img src="./img/client-5.png" alt=""></div>           
+        </div>
+        <div class="s-clients__content">
+          <div class="client"><img src="./img/client-6.png" alt=""></div>
+          <div class="client"><img src="./img/client-7.png" alt=""></div>
+          <div class="client"><img src="./img/client-8.png" alt=""></div>
+          <div class="client"><img src="./img/client-9.png" alt=""></div>
+          <div class="client"><img src="./img/client-10.png" alt=""></div>
+          <div class="client"><img src="./img/evodream-logo.png" alt=""></div>
+        </div>
+        <div class="owl-carousel carousel-clients">
+          <div class="client"><img src="./img/client-1.png" alt=""></div>
+          <div class="client"><img src="./img/client-2.png" alt=""></div>
+          <div class="client"><img src="./img/client-3.png" alt=""></div>
+          <div class="client"><img src="./img/client-4.png" alt=""></div>
+          <div class="client"><img src="./img/client-5.png" alt=""></div>
+          <div class="client"><img src="./img/client-6.png" alt=""></div>
+          <div class="client"><img src="./img/client-7.png" alt=""></div>
+          <div class="client"><img src="./img/client-8.png" alt=""></div>
+          <div class="client"><img src="./img/client-9.png" alt=""></div>
+          <div class="client"><img src="./img/client-10.png" alt=""></div>
+          <div class="client"><img src="./img/evodream-logo.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-results">
+      <div class="container">
+        <h2 class="section-title">Наши результаты на пути великих свершений</h2>
+        <div class="s-results__content">
+          <div class="result"><img src="./img/result.png" alt=""></div>
+          <div class="result"><img src="./img/result.png" alt=""></div>
+          <div class="result"><img src="./img/result.png" alt=""></div>
+          <div class="result"><img src="./img/result.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section s-test">
       <div class="container">
 
         <div class="form form--vertical wow slideInLeft">
@@ -487,8 +701,8 @@
         </div>
 
       </div>
-    </section>
-
+    </section> -->
+    
     <footer class="footer inverse">
       <div class="container">
         <div class="footer__content">
@@ -519,16 +733,17 @@
                     
         </div>  
         <div class="footer__politika">
-          <a href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+          <a href="" data-remodal-target="politika">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
         </div>      
       </div>
     </footer>
   </div>
 
   <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close"></button>
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
 
-    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+    <div class="remodal__title">Укажите номер телефона, <br>
+      и мы свяжемся с Вами!</div>
 
     <div class="form form--vertical">
       <form action="/mail.php" method="post">
@@ -536,20 +751,140 @@
           <input type="hidden" name="info" value="Обратный звонок">
 
           <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Имя">
+            <input type="text" class="input" name="name" placeholder="Введите имя">
           </div>
 
           <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
             <span class="error-message">Заполните это поле</span>
           </div>
 
           <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
 
-          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+          <div class="form__info">*Ваши данные в безопасности
+            и не будут переданы третьим лицам</div>
         </div>
       </form>
     </div>
+  </div>
+
+  <div class="remodal more" data-remodal-id="more-1" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="more__header">
+      <img src="./img/comand-1.jpg" alt="">
+      <div class="more__block">
+        <div class="more__name">Кайдарова Меруерт</div>
+        <div class="more__summary">Сооснователь "SOVA studio production" и главный идейный вдохновитель</div>
+      </div>
+    </div>
+
+    <div class="more__content">
+      <div class="more__title">Необычная история о взлетах и падениях на пути к мечте...</div>
+      <div class="more__text"> <span>Становление</span> <br>
+        В 18 лет я начала работать на первом музыкальном национальном телеканале "Хит ТВ" редактором прямых эфиров и постпродакшн спецпроектов.
+        Все было новым, интересным и не имело никакого отношения к моей будущей специальности  – банковский сотрудник, финансист. Но мне безумно нравилось…снимать, искать кадры, монтировать, подбирать музыку...</div>
+
+      <div class="more__text"> <span>Отклонение от курса</span> <br>
+        К сожалению, через год мне пришлось уйти с канала, так как шла защита дипломной работы и нужно было выходить на профилирующую практику в финансовые организации.  Долгое время вращалась в сфере банков второго уровня РК, но эта работа не удовлетворяла ни духовно, ни эмоционально.
+        После защиты и практики меня пригласили работать в "Тау продакшн".  Это было интересно, мы снимали короткий биографический фильм про деятелей Республики Казахстан.
+        Потом была работа во Всемирном банке. Да, материальный взлет, стабильность, но душа тянулась к творчеству и было ощущение, что время трачу впустую …не могла творить и создавать.</div>
+
+      <div class="more__text"> <span>Вдохновение</span> <br>
+        В 2016 году вышла на один проект. Это была полная консолидация музыкальной базы Республики Казахстан, работа параллельно включала в себя видеообзоры – уроки музыки, обзорные мастер-классы, клипы и ролики. В какой-то момент поняла, что сколько бы ни работала в данном проекте, все равно это будет чужая идея, чужие амбиции и планы.  Мне хотелось самой создавать, изучать, смотреть, снимать и монтировать.
+        Таким образом, встретив на своем пути единомышленника и нынешнего бизнес-партнера Арыкбаева Абзала, я поняла, что пора объединить наши силы, знания и навыки в одно целое. "Сова" появилась больше как проект-хобби и начала свой путь с познания первичных истин. Я - финансист с малым опытом работы в сфере видеопроизводства, Абзал - профессиональный музыкант с опытом создания музыкальных клипов в качестве участника группы "Туран".</div>
+
+      <div class="more__text"> <span>Трудности</span> <br>
+        Многое мы не понимали технически, не было возможностей, наработанной клиентской базы, (элементарно) инвестиций, чтобы запустить работу в полном цикле производства. Путь был нелегкий, временами опускались руки и столько раз хотели отступить назад. Рынок заполнен подобными компаниями и услугами. Пробиться на него сложно.    
+        Но нас держало желание творить и не сдаваться, пытаться, вставать и делать! Весь период становления нашего проекта рядом с нами шли друзья, наши родные и близкие, которые поддерживали нас морально и много раз выручали в работе. Это я еще не говорю про профобучение в монтажных программах, про азы правильной постановки камеры и света. Мы им за это очень благодарны. </div>
+
+      <div class="more__text"> <span>Расцвет</span> <br>
+        На сегодняшний день в нашей команде очень талантливые и креативные сотрудники. Зачастую мы проводим бизнес-встречи и обсуждения вне офиса. Мы выезжаем на природу, ходим в фейни,  в легкой и теплой атмосфере обсуждаем  наши «наполеонвские» планы и сценарии.    
+        Отличительная черта нашей компании в том, что мы никогда не подходим стандартно к заказу. Цена, качество, сроки изготовления… мы лояльны и гибки,  мы молодая команда и набираемся опыта. Каждый клиент в будущем становится нам хорошим другом, либо единомышленником. Мы всегда поддерживаем связь, общаемся и видимся даже после завершения проекта. Удивительно то, что мы продаем даже не готовый коммерческий продукт, а настоящие неподдельные эмоции с того или иного события нашего клиента. Это потрясающе!!!</div>
+
+      <div class="more__text"> <span>"Наполеоновские" планы</span> <br>
+        Со временем мы планируем запуск и производство короткометражных фильмов, клипов и социальных роликов. Некоммерческие проекты. Потому что мир прекрасен и удивителен. И все это хочется зафиксировать, слепить и показать людям. Показать, что есть настоящее, что не все имеет денежный эквивалент. Есть сюжеты, события, идеи и творчество!</div>
+    </div>
+
+  </div>
+
+  <div class="remodal more" data-remodal-id="more-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="more__header">
+      <img src="./img/comand-1.jpg" alt="">
+      <div class="more__block">
+        <div class="more__name"> Арыкбаев Абзал</div>
+        <div class="more__summary">Сооснователь "SOVA studio production" и мотиватор команды</div>
+      </div>
+    </div>
+
+    <div class="more__title">Камера всегда была моим близком другом...</div>
+    <div class="more__text">Работа по видео началась в ходе моей деятельности в компании "Dalatunes" в 2015 году. Уже в музыкальном училище камера стала моим близким другом. Я старался запечатлеть все концерты и мастер-классы моих учителей. В музее казахских народных музыкальных инструментов имени Ыхласа был опыт работы по цифрованию архивных данных и исторических материалов по музыке. Также опыт в разработке кинект-зала для интерактива для детей посредством виртуального управления музыкой на расстоянии. А также работа по голографии и музыкальному, фоновому оформлению.</div>
+
+    <div class="more__text">Работая в "Dalatunes", я снимал и монтировал видеоуроки по музыке, мастер-классы, ознакомительные видео и, конечно же, клипы. Опыт работы обрёл колоссальный, несмотря на то, что специфика у меня музыкальная и больше времени я проводил на гастролях и на сцене. В этой компании я встретил идейного, креативного и целеустремленного человека в лице Миры, которая на данный момент является моим бизнес-партнёром.  </div>      
+
+    <div class="more__text">Пройдя через все трудности, решили окунуться в создание своего бизнеса. Для многих людей такое является серьезным и довольно тяжёлым шагом в жизни. Вытащить себя из зоны комфорта и пинать себя дальше для достижения новых целей и покорения новых вершин - решаются на это не все.  </div>  
+
+    <div class="more__text">Но мы начали и не пожалели. Сегодня, помимо таких проектов, как этнофольклорных ансамбль "Туран" и нео-этнофольк группа "Аркайым" также появился новый проект - "СОВА".</div>
+
+    <div class="more__text">В планах - вывести отечественный кинематограф на международный уровень.    </div>  
+
+  </div>
+
+  <div class="remodal more" data-remodal-id="more-3" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="more__header">
+      <img src="./img/comand-3.jpg" alt="">
+      <div class="more__block">
+        <div class="more__name">Атлан Нурланулы</div>
+        <div class="more__summary">видеограф, режиссер постановщик  </div>
+      </div>
+    </div>
+
+    <!-- <div class="more__title"></div> -->
+    <div class="more__text">Карьеру в сфере видео производства начал в 2010 году. Приступил как фрилансер, работал режиссером постановщиком, участвовал в создании музыкальных роликов. Это был яркий период работы, так как повстречал на своем пути много интересных личностей, которые ныне до сих пор имеют место в моей жизни, но уже не как клиенты, а как друзья.</div>
+
+    <div class="more__text">Далее меня пригласили на телеканала «Ер арна» оператором прямых эфиром и постпродакшн программ. Работа была не легкой, практически в 2 смены через день. Это сильно утомляло, но понимал, что мне был необходим этот опыт, чтобы отточить свое мастерство в качестве оператора.</div>
+
+    <div class="more__text">После телеканала ушел работать на канал «Казахстан», в мои обязанности входила работа не только оператором, но и постановщиком-режиссером постпродакшн программ. Параллельно работал на спец проектах на канале «Хиттв», формат иной, но все это нравилось плюс стал осваивать монтажные программы. И мог уже полноценно вести работу начиная со съемок, заканчивая самим монтажом.</div>
+
+    <div class="more__text">Работа на телеканалах - это немного рутинная работа, каждый день фактически одно и тоже, поэтому всегда стараюсь брать интересные проекты как фрилансер. Рекламные постановочные ролики, вирусные ролики, документальные фильмы, имидживые.</div>
+
+    <div class="more__text">На сегодняшних день, я работаю в команде с Совой и мне нравится это взаимодействие и наши рабочие процессы. Нравится, что наши интересы и видение совпадают. Что в конечном итоге приводит к интересным итворческим проектам! </div> 
+
+  </div>
+
+  <div class="remodal politika" data-remodal-id="politika" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="politika__title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+    <div class="politika__text"> Соблюдение Вашей конфиденциальности важно для  нашей компании. Поэтому мы разработали Политику Конфиденциальности, которая описывает, как  используется и хранится Ваша информация. Пожалуйста, ознакомьтесь и сообщите нам, если у Вас возникнут какие-либо вопросы.</div>
+
+    <div class="politika__text"> <span>Сбор и использование персональной информации</span> <br>
+    Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица либо связи с ним.
+    От Вас может быть запрошено предоставление персональной информации в любой момент, когда Вы связываетесь с нами.</div>
+
+    <div class="politika__text"> <span>Какую персональную информацию мы собираем</span> <br>
+    Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер телефона, адрес электронной почты и т.д.</div>
+
+    <div class="politika__text"> <span>Как мы используем Вашу персональную информацию</span> <br>
+    Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей: проведения аудита, анализа данных и различных исследований в целях улучшения услуг.
+    Если Вы принимаете участие в розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.</div>
+
+    <div class="politika__text"> <span>Раскрытие информации третьим лицам</span> <br>
+    Мы не раскрываем полученную от Вас информацию третьим лицам.</div>
+
+    <div class="politika__text"> <span>Исключения</span> <br>
+    В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных запросов или запросов от государственных органов на территории РК. Мы также можем раскрывать информацию о Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания правопорядка или иных общественно важных случаях.
+    В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.</div>
+
+    <div class="politika__text"> <span>Защита персональной информации</span> <br>
+    Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного доступа, раскрытия, изменения и уничтожения.</div>
+
+    <div class="politika__text"> <span>Соблюдение Вашей конфиденциальности на уровне компании</span> <br>
+    Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения конфиденциальности.  </div>
+
   </div>
 
   <script src="./js/libs.min.js"></script>

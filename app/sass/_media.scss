@@ -109,6 +109,38 @@
         justify-content: center;
       }
     }
+
+    &-reviews {
+      
+      .review {
+        display: block;
+        img {
+          margin: 0 auto 10px;
+        }
+        &__content {
+          margin: 0 auto 10px;
+        }
+        &__name {
+          text-align: center;
+        }
+        &__summary {
+          text-align: center;
+        }
+        video {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    &-clients {
+      &__content {
+        display: none;
+      }
+      .carousel-clients {
+        display: block;
+      }
+    }
   }
 }
 
@@ -198,9 +230,7 @@
 
     &-comand {
       &__img {
-        // flex-wrap: nowrap;
         img {
-          // width: 50%;
           width: 130px;
           height: 100%;
         }

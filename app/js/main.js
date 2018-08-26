@@ -199,6 +199,34 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-event").owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, },
+      576: { items: 1, mouseDrag: true,},
+    },
+  });
+
+  $(".carousel-clients").owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 2, mouseDrag: false, },
+      576: { items: 3, mouseDrag: true,},
+      767: { items: 4, mouseDrag: true,},
+    },
+  });
+
+
   $(".carousel-certificates").owlCarousel({
     loop: true,
     smartSpeed: 500,
