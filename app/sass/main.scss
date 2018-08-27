@@ -334,6 +334,10 @@
       bottom: -19px;
       left: 50%;
       transform: translateX(-50%);
+
+      &:active {
+        top: auto;
+      }
     }
 
     &:hover {
