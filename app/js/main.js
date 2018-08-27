@@ -168,8 +168,11 @@ $(document).ready(function () {
     margin: 15,
     navText: ['', ''],
     responsive: {
-      0: { items: 2, mouseDrag: false, },
-      576: { items: 4, mouseDrag: true,},
+      0: { items: 3, mouseDrag: false },
+      576: { items: 4, mouseDrag: true },
+      768: { items: 3, mouseDrag: true },
+      992: { items: 3, mouseDrag: true },
+      1200: { items: 4, mouseDrag: true },
     },
   });
 

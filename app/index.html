@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=10" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -128,28 +128,46 @@
 
         <div class="row">
           <div class="col-md-6">
-            <div class="video__label">
-              <div class="video__title"></div>
-            </div>
-            <div class="carousel-work owl-carousel">
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-            </div>
+            <div class="video__container video__container--first">
+              <div class="video__title">Бизнес-ролики</div> 
+              <div class="video__label">
+                <video controls>
+                  <source src="./videos/movie.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="video__img" style="background-image: url('./img/video.jpg')">
+                  <div class="video__play"></div>
+                </div>
+              </div>
+              <div class="carousel-work owl-carousel">
+                <div class="video__preview active"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+              </div>
+            </div>            
           </div>
           <div class="col-md-6">
-            <div class="video__label">
-              <div class="video__title"></div>
-            </div>
-            <div class="carousel-work owl-carousel">
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-              <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-            </div>
+            <div class="video__container">
+              <div class="video__title">Отчетные ролики с мероприятий</div>
+              <div class="video__label">
+                <video controls>
+                  <source src="./videos/movie.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="video__img" style="background-image: url('./img/video.jpg')">
+                  <div class="video__play"></div>
+                </div>
+              </div>
+              <div class="carousel-work owl-carousel">
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+              </div> 
+            </div>            
           </div>
         </div>
       </div>
@@ -163,63 +181,63 @@
             <div class="creat">
               <div class="creat__title">Имиджевые <br>
                 (промо) ролики</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-1">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Отчетные ролики</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-2">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Производственные <br>
                 ролики</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-3">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Обучающие видео</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-4">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Видеообзоры</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-5">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Обращения
                 спикеров</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-6">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Кейсы</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-7">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Клипы</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-8">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Свадебные видео</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-9">Посмотреть описание <br> и стоимость</button>
             </div>
           </div>
           <div class="col-lg-2 col-md-3">
             <div class="creat">
               <div class="creat__title">Монтаж видео</div>
-              <button class="button">Посмотреть описание <br> и стоимость</button>
+              <button class="button" data-remodal-target="rolik-10">Посмотреть описание <br> и стоимость</button>
             </div>
           </div> 
         </div>
@@ -227,45 +245,45 @@
           <div class="creat">
             <div class="creat__title">Имиджевые <br>
               (промо) ролики</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-1">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Отчетные ролики</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button"data-remodal-target="rolik-2">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Производственные <br>
               ролики</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-3">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Обучающие видео</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-4">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Видеообзоры</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-5">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Обращения
               спикеров</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-6">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Кейсы</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-7">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Клипы</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-8">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Свадебные видео</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-9">Посмотреть описание <br> и стоимость</button>
           </div>
           <div class="creat">
             <div class="creat__title">Монтаж видео</div>
-            <button class="button">Посмотреть описание <br> и стоимость</button>
+            <button class="button" data-remodal-target="rolik-10">Посмотреть описание <br> и стоимость</button>
           </div>
         </div>
         <div class="s-creat__quiz">
@@ -394,10 +412,15 @@
               <div class="review__summary">Директор продюсерского центра "KS PRODUCTION" </div>
               <div class="review__text">Рекомендую компанию "Сова" за их оперативность и профессионализм. Мы проводили вечер под названием «Магия Красоты», где ребята из "Совы" снимали отчет. Они выпустили его через 2 часа после завершения мероприятия! Это невероятно! Всем советуем. Мы за качество и скорость!  </div>
             </div>
-            <video width="360" height="175" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-            </video>
+            <div class="video__label">
+              <video controls>
+                <source src="./videos/movie.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
           </div>
 
           <div class="review">
@@ -766,6 +789,448 @@
         </div>
       </form>
     </div>
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-1" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Имиджевые (промо) ролики</h3>
+        <div class="rolik__text">Имиджевые ролики направлены на улучшение имиджа компании и повешение лояльности ее клиентов.</div>
+        <ul>Виды имиджевых роликов:
+          <li>- Рассказ об истории компании, коллективе и целях</li>
+          <li>- Проморолики</li>
+          <li>- Интервью с экспертом</li>
+          <li>- Видеоотчёты о проведённом мероприятии</li>
+          <li>- Видеоотзывы   </li>     
+        </ul>
+        <div class="rolik__sum">от 80 000 тенге</div>
+        <div class="rolik__minut">1 минута*</div>
+        <div class="rolik__result">*В результате исследований было доказано, что человек способен концентрировать максимум внимания в течение короткого промежутка времени. По этой причине в процессе монтажа мы создаем наиболее короткие ролики, ориентированные на целевую аудиторию и ее особенности</div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros">Вашей компании нужен
+            грамотный имиджевый ролик? </div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение имиджевый ролик">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_imidjevyi__rolik">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Отчетные ролики</h3>
+        <div class="rolik__text">Отчетные ролики активно используются для маркетинговых целей.</div>
+        <ul>После проведения мероприятий отчетные ролики распространяют со следующими целями:
+          <li>- заявить о себе и своих мероприятиях с целью привлечения   
+            новых посетителей</li>
+          <li>- улучшить имидж компании в глазах партнеров и 
+            потенциальных клиентов</li>
+          <li>- поднять корпоративный дух внутри своей компании </li>    
+        </ul>
+        <div class="rolik__sum">от 50 000 тенге</div>
+        <div class="rolik__minut">1 минута*</div>
+        <div class="rolik__result">*В результате исследований было доказано, что человек способен концентрировать максимум внимания в течение короткого промежутка времени. По этой причине в процессе монтажа мы создаем наиболее короткие ролики, ориентированные на целевую аудиторию и ее особенности</div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros">Нужно создать отчетный ролик
+            с мероприятия? </div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение отчетный ролик">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_ot4etnyi__rolik">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-3" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Производственные ролики</h3>
+        <div class="rolik__text">Производственные ролики создаются для комплексного представления о деятельности компании, ее истории, развитии и основных преимуществах.</div>
+        <ul>
+          <li>- Производственные ролики активно используются для 
+          повышения имиджа компании</li>
+          <li>- Представляют деятельность компании с выгодной стороны</li>
+          <li>- Привлекают внимание потенциальных клиентов и партнеров </li>    
+        </ul>
+        <div class="rolik__sum">от 150 000 тенге</div>
+        <div class="rolik__minut">1 минута*</div>
+        <div class="rolik__result">оговаривается индивидуально</div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros"></div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Производственные ролики">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_proizvodstvennyi__rolik">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-4" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Обучающие видео</h3>
+        <div class="rolik__text">Обучать персонал при помощи видео удобно: один раз сняли и можно многократно использовать в дальнейшем. </div>
+        <div class="rolik__text">Помимо применения обучающих видео внутри компании, в последнее время их активно используют в маркетинговых целях в качестве обучающих видео для клиентов в соответствующих сферах.</div>
+        <ul>     Виды обучающих видео:
+           <li> - фильм-инструкция</li>
+            <li>- видеолекция</li>
+        </ul>
+        <div class="rolik__sum">от 25 000 тенге</div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros">Вашей компании нужно
+              грамотное обучающее видео?  </div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение обучающее видео">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_obu4aiushie__video">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-5" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Видеообзоры</h3>
+        <div class="rolik__text">Качественный видеообзор с правильно поданной информацией способен заинтересовать целевую аудиторию в товаре или услуге, а соответственно - создать успешные продажи.</div>
+        <ul>
+            В процессе работы над видеообзорами мы стремимся сделать    их наиболее интересными, яркими и лаконичными.     
+        </ul>
+        <div class="rolik__sum">от 50 000 тенге</div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros"></div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Видеообзоры">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_videoobzory">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-6" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Обращения спикеров</h3>
+        <div class="rolik__text">Видеоролик в стиле обращения спикера является отличной возможностью для руководителя компании грамотно презентовать свою компанию, поздравить клиентов и сотрудников со знаковым событием.</div>
+        <ul>     
+        </ul>
+        <div class="rolik__sum">от 40 000 тенге</div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros"></div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Обращения спикеров">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_imidjevyi__rolik">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-7" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Кейсы</h3>
+        <div class="rolik__text">Кейс - хорошая возможность для компании заявить о себе, подтвердить свой профессионализм и качество услуг. А кейс в формате видеоролика упростит восприятие информации и наилучшим образом передаст клиентам все преимущества Вашей компании.</div>
+        <ul>     
+        </ul>
+        <div class="rolik__sum">от 25 000 тенге</div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros"></div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Кейсы">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_keis">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-8" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Клипы</h3>
+        <div class="rolik__text">Клип - это короткометражное видео (анимационный) фильм, который сопровождает музыкальную композицию.          </div>
+        <ul>     
+        </ul>
+        <div class="rolik__sum">от 500 000 тенге</div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros"></div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Клип">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_klip">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-9" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Свадебные видео</h3>
+        <div class="rolik__text">Свадьба - знаковое событие в жизни человека. А красивое и интересное видео дает прекрасную возможность отложить в памяти лучшие моменты этого важного дня.</div>
+        <ul>     
+        </ul>
+        <div class="rolik__sum">от 100 000 тенге </div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros">Сохраните счастливые моменты
+              лучшего дня в своей жизни! </div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Свадебные видео">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_svadebnye_video">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+
+  <div class="remodal rolik" data-remodal-id="rolik-10" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="rolik__content">
+      <div class="rolik__block">
+        <h3 class="rolik__title">Монтаж видео</h3>
+        <div class="rolik__text">После мероприятия осталось большое количество отснятого видеоматериала?</div>
+        <ul>    Ему необходим грамотный монтаж! 
+        </ul>
+        <div class="rolik__sum">от 50 000 тенге</div>
+        <div class="rolik__minut">оговаривается индивидуально</div>
+        <div class="rolik__result"></div>
+      </div>
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__vopros"> </div>
+          <div class="form__title">Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку, и мы
+            подготовим для Вас наиболее
+            подходящее предложение Монтаж видео">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku_montaj_video">Оставить заявку</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </form>
+      </div>
+    </div>    
   </div>
 
   <div class="remodal more" data-remodal-id="more-1" data-remodal-options="hashTracking: true">
