@@ -354,7 +354,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .input-div {
-      margin-right: 20px;
+      margin-right: 25px;
+    }
+
+    .input-div, .button {
+      flex-basis: 185px;
+      flex-grow: 1;
     }
   }
 

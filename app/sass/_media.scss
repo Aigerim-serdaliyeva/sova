@@ -176,6 +176,8 @@
 
     .input-div, .button {
       width: 100%;
+      flex-grow: 0;
+      flex-basis: auto;
     }
   }
 
