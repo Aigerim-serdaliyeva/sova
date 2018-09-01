@@ -355,33 +355,19 @@
   &__quiz {
     background-color: rgba(255, 255, 255, .7);
     padding: 20px 0;
-    display: flex;
-    align-items: center;
-    position: relative;
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: rgba(255,255,255,.7);
-      top: 0;
-      right: 100%;
-      bottom: 0;
-      left: -1000px;
+
+    &__content {
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
     }
-    &::after {
-      position: absolute;
-      content: "";
-      background-color: rgba(255,255,255,.7);
-      top: 0;
-      left: 100%;
-      bottom: 0;
-      right: -1000px;
-    }    
     
     &__title {
       font-size: 18px;
       font-weight: 500;
       margin-right: 20px;
     }
+    
     .button {
       box-shadow: 2.5px 4.33px 8.73px 0.27px rgba(33, 30, 27, 0.85);
       width: 185px;
