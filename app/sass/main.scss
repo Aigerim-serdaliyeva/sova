@@ -490,6 +490,13 @@
 }
 
 .s-events {
+  .carousel-events {
+    display: none;
+    .event {
+      width: 80%;
+    }
+  }
+
   &__title {
     font-size: 18px;
     margin-bottom: 25px;
@@ -503,14 +510,16 @@
 
   .event {
     display: flex;
-    align-items: flex-start;
-    // max-width: 556px;
+    align-items: center;
     width: 48%;
     margin-bottom: 30px;
 
     &__img {
       margin-right: 30px;
       flex-shrink: 0;
+      width: 260px;
+      height: 190px;
+      background-color: $accent;
     }
 
     &__title {
@@ -577,12 +586,52 @@
   }
 }
 
+.question {
+  max-width: 360px;
+  min-height: 300px;
+  background-color: #282828;
+
+  &__num {
+    font-size: 18px;
+    font-family: Montserrat, serif;
+    color: #fff;
+    margin-bottom: 13px;
+    padding-left: 5px;
+    border-left: 2px solid $accent;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+  &__label {
+    flex-grow: 1;
+  }
+  .checkbox {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .perehod {
+    color: $accent;
+    font-style: italic;
+    text-align: right;
+    display: block;
+    text-decoration: underline;
+    margin-top: 20px;
+  }
+}
+
 .more {
   max-width: 944px;
   box-shadow: 2.5px 4.33px 8.73px 0.27px rgba(33, 30, 27, 0.85);
 
   &__header {
     display: flex;
+    align-items: flex-start;
     padding: 18px 40px;
     background-color: $accent;
     margin: 0 -35px 15px;    
