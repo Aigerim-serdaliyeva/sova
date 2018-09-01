@@ -269,17 +269,23 @@
     &__title {
       font-size: 20px;
     }
+
     &__content {
       display: block;
     }
+
     &__block {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
+      max-width: none;
       padding-right: 0;
     }
+
     .form {
+      max-width: none;
       width: auto;
-      margin: 0 auto;
+      margin: 0 -20px -20px -20px;
     }
+
     .remodal {
       &-close {
         &--white {
