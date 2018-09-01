@@ -123,7 +123,7 @@ $(document).ready(function () {
     var form = $(this).find("form");
     if (form.length > 0) {
       form[0].reset();
-    }
+    }    
   });
 
   $(".ajax-submit").click(function (e) {
@@ -160,47 +160,54 @@ $(document).ready(function () {
     }
   });
 
-  $(".perehod").click(function() {
+  var $questionModal = $(".question-modal");
+  $(".perehod").click(function(e) {
+    e.preventDefault();
     var $this = $(this);
 
-    var $show = $("#" + $(this).data("show"));
-    var $hide = $("#" + $(this).data("hide"));
+    var $show = $questionModal.find("#" + $this.data("show"));
+    var $hide = $questionModal.find("#" + $this.data("hide"));
 
-    if ($this.data("type") == "next") {
-      var $question = $this.closest(".s-question");
-      var variantSelected = false;
-      var drugoeSelected = false;
+    var $question = $this.closest(".question");
+    var variantSelected = false;
+    var drugoeSelected = false;
 
-      var $variants = $question.find('.checkbox input:first-child');
-      $variants.each(function() {
-        var $input = $(this);
-        if ($input.prop('checked')) {
-          if ($input.hasClass("drugoe")) {
-            drugoeSelected = true;
-            var vawVariant = $input.siblings(".ukazat").val();
-            if (vawVariant && vawVariant.length > 0) {
-              variantSelected = true;
-            }
-          } else {
+    var $variants = $question.find('.checkbox input:first-child');
+    $variants.each(function() {
+      var $input = $(this);
+      if ($input.prop('checked')) {
+        // Проверяем первый вопрос ли, если да, тогда что выбрано
+        if ($this.data("id") === 'first' && $input.val() === 'Для личного использования') {
+          $show = $questionModal.find("#question-2-2");
+        }
+
+        // Если выбран другое, то пользователь обьязан указать свой вариант
+        if ($input.hasClass("drugoe")) {
+          drugoeSelected = true;
+          var vawVariant = $input.siblings(".ukazat").val();
+          if (vawVariant && vawVariant.length > 0) {
             variantSelected = true;
           }
+        } else {
+          variantSelected = true;
         }
-      });  
-
-      if ($variants.length > 0 && !variantSelected) {
-        var errorText = drugoeSelected ? "Укажите ваш вариант" : "Выберите один из вариантов";
-        $question.addClass("has-error");
-        $question.find(".question__error").html(errorText);
-        return;
       }
+    });  
+
+    if ($variants.length > 0 && !variantSelected) {
+      var errorText = drugoeSelected ? "Укажите ваш вариант" : "Выберите один из вариантов";
+      $question.addClass("has-error");
+      $question.find(".question__error").html(errorText);
+      return;
     }
 
     $show.removeClass("d-none");
     $hide.addClass("d-none");
-
-
   });
 
+  $(document).on('closing', '.question-modal', function (e) {
+    $questionModal.find('.question').removeClass('has-error').addClass('d-none').filter('#question-1').removeClass('d-none');
+  });
 
   $(".carousel-work").owlCarousel({
     loop: false,

@@ -292,7 +292,7 @@
         <div class="container">
           <div class="s-creat__quiz__content">
             <div class="s-creat__quiz__title">Пройдите тест по определению наиболее подходящего  для Вас вида ролика и узнайте его стоимость</div>
-            <div class="button" data-remodal-target="question-1">Пройти тест</div>        
+            <div class="button" data-remodal-target="question-modal">Пройти тест</div>        
           </div>
         </div>
       </div>
@@ -878,75 +878,98 @@
     </div>
   </div>
 
-  <div class="remodal question" data-remodal-id="question-1" data-remodal-options="hashTracking: true">
+  <div class="remodal question-modal" data-remodal-id="question-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
-    <div class="question__num">Вопрос 1/3</div>
-    <div class="question__text">Для какой цели Вам нужен ролик?</div>
-    <div class="question__label">
-      <label class="checkbox"><input type="radio" name="Ответ1" value="Для бизнеса"><span>Для бизнеса</span></label>
-      <label class="checkbox"><input type="radio" name="Ответ1" value="Для личного использования"><span>Для личного использования</span></label>
-    </div>
-    <a href="#" class="perehod" data-show="question2" data-hide="question1">Следующий вопрос</a>
-  </div>
 
-  <div class="remodal question question2" data-remodal-id="question-2" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
-    <div class="question__num">Вопрос 2/3</div>
-    <div class="question__text">Как Вы планируете использовать ролик в дальнейшем?</div>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Для рекламы продукта или услуги"><span>Для рекламы продукта или услуги</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Для использования внутри компании в корпоративных целях"><span>Для использования внутри компании  в корпоративных целях</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Для презентации компании на выставках и прочих мероприятиях"><span>Для презентации компании на выставках и прочих мероприятиях</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
-    <a href="#" class="perehod" data-show="question3" data-hide="question2">Следующий вопрос</a>   
-  </div>
+    <form action="/mail.php" method="post">
+      <input type="hidden" name="info" value="Quiz">
 
-  <div class="remodal question question3" data-remodal-id="question-3" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
-    <div class="question__num">Вопрос 2/3</div>
-    <div class="question__text">В честь какого мероприятия Вам нужен
-      ролик?</div>
-    <label class="checkbox"><input type="radio" name="Ответ2/3" value="Семейный праздник (день рождения, годовщина, другое знаковое событие)"><span>Семейный праздник (день рождения, годовщина, другое знаковое событие)</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2/3" value="Свадьба, той, прочие мероприятия"><span>Свадьба, той, прочие мероприятия</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2/3" value="Предложение, Love story"><span>Предложение, Love story</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2/3" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
-    <a href="#" class="perehod" data-show="question4" data-hide="question3">Следующий вопрос</a>   
-  </div>
+      <div class="question" id="question-1">
+        <div class="question__num">Вопрос 1/3</div>
+        <div class="question__text">Для какой цели Вам нужен ролик?</div>
+        <div class="question__label">
+          <label class="checkbox"><input type="radio" name="Ответ1" value="Для бизнеса"><span>Для бизнеса</span></label>
+          <label class="checkbox"><input type="radio" name="Ответ1" value="Для личного использования"><span>Для личного использования</span></label>
+        </div>
+        <div class="question__error"></div>
+        <a href="#" class="perehod" data-id="first" data-show="question-1-2" data-hide="question-1">Следующий вопрос</a>
+      </div>
 
-  <div class="remodal question question4" data-remodal-id="question-4" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
-    <div class="question__num">Вопрос 3/3</div>
-    <div class="question__text">Какая у Вас сфера бизнеса?</div>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Продажа товаров для населения"><span>Продажа товаров для населения</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Услуги для населения"><span>Услуги для населения</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Оптовые продажи товаров"><span>Оптовые продажи товаров</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Услуги для бизнеса"><span>Услуги для бизнеса</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
-    <a href="#" class="perehod" data-show="question5" data-hide="question4">Завершить тест</a>   
-  </div>
+      <div class="question d-none" id="question-1-2">
+        <div class="question__num">Вопрос 2/3</div>
+        <div class="question__text">Как Вы планируете использовать ролик в дальнейшем?</div>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Для рекламы продукта или услуги"><span>Для рекламы продукта или услуги</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Для использования внутри компании в корпоративных целях"><span>Для использования внутри компании  в корпоративных целях</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Для презентации компании на выставках и прочих мероприятиях"><span>Для презентации компании на выставках и прочих мероприятиях</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Ответ2_текст" placeholder="указать*" class="ukazat"></label>
+        <div class="question__error"></div>
+        <a href="#" class="perehod" data-show="question-1-3" data-hide="question-1-2">Следующий вопрос</a>
+      </div>
 
-  <div class="remodal question question5" data-remodal-id="question-5" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
-    <div class="question__num">Вопрос 3/3</div>
-    <div class="question__text">Планируете ли Вы в дальнейшем где-нибудь размещать ролик?</div>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Да, в социальных сетях (Instagram, VK, Facebook, прочее)"><span>Да, в социальных сетях (Instagram, VK, Facebook, прочее)</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Youtube"><span>Youtube</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Нет, ролик нужен исключительно для личного просмотра и показа родным и близким"><span>Нет, ролик нужен исключительно для личного просмотра и показа родным и близким</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value=""><span></span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
-    <a href="#" class="perehod" data-show="question3" data-hide="question2">Завершить тест</a>   
-  </div>
+      <div class="question d-none" id="question-1-3">
+        <div class="question__num">Вопрос 3/3</div>
+        <div class="question__text">Какая у Вас сфера бизнеса?</div>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Продажа товаров для населения"><span>Продажа товаров для населения</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Услуги для населения"><span>Услуги для населения</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Оптовые продажи товаров"><span>Оптовые продажи товаров</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Услуги для бизнеса"><span>Услуги для бизнеса</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Ответ3_текст" placeholder="указать*" class="ukazat"></label>
+        <div class="question__error"></div>
+        <a href="#" class="perehod" data-id="last" data-show="question-last" data-hide="question-1-3">Завершить тест</a>
+      </div>
 
-  <div class="remodal question question6" data-remodal-id="question-2" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
-    <div class="question__num">Вопрос 3/3</div>
-    <div class="question__text"></div>
-    <label class="checkbox"><input type="radio" name="Ответ2" value=""><span></span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value=""><span></span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value=""><span></span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value=""><span></span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Другое" placeholder="указать*" class="ukazat"></label>
-    <a href="#" class="perehod" data-show="question3" data-hide="question2">Следующий вопрос</a>   
-  </div>
+      <div class="question d-none" id="question-2-2">
+        <div class="question__num">Вопрос 2/3</div>
+        <div class="question__text">В честь какого мероприятия Вам нужен ролик?</div>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Семейный праздник (день рождения, годовщина, другое знаковое событие)"><span>Семейный праздник (день рождения,
+            годовщина, другое знаковое событие)</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Свадьба, той, прочие мероприятия"><span>Свадьба, той, прочие мероприятия</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Предложение, Love story"><span>Предложение, Love story</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Ответ2_текст" placeholder="указать*" class="ukazat"></label>
+        <div class="question__error"></div>
+        <a href="#" class="perehod" data-show="question-2-3" data-hide="question-2-2">Следующий вопрос</a>
+      </div>
+
+      <div class="question d-none" id="question-2-3">
+        <div class="question__num">Вопрос 3/3</div>
+        <div class="question__text">Планируете ли Вы в дальнейшем где-нибудь размещать ролик?</div>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Да, в социальных сетях (Instagram, VK, Facebook, прочее)"><span>Да, в социальных сетях (Instagram, VK, Facebook, прочее)</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Youtube"><span>Youtube</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Нет, ролик нужен исключительно для личного просмотра и показа родным и близким"><span>Нет, ролик нужен исключительно для личного просмотра и показа родным и близким</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value=""><span></span></label>
+        <label class="checkbox"><input type="radio" name="Ответ3" value="Другое" class="drugoe"><span>Другое</span><input type="text" name="Ответ3_текст" placeholder="указать*" class="ukazat"></label>
+        <div class="question__error"></div>
+        <a href="#" class="perehod" data-show="question-last" data-hide="question-2-3">Завершить тест</a>
+      </div>
+
+      <div class="question d-none" id="question-last">
+        <div class="remodal__title">
+            Укажите контактные данные для того, <span class="break">чтобы мы могли сообщить Вам</span> результаты теста
+        </div>
+    
+        <div class="form form--vertical">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Обратный звонок">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Введите имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="uznat_rezultat_testa">Узнать результаты теста</button>
+  
+            <div class="form__info">*Ваши данные в безопасности
+              и не будут переданы третьим лицам</div>
+          </div>
+        </div>
+      </div>
+
+    </form>    
+  </div>  
 
   <div class="remodal rolik" data-remodal-id="rolik-1" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
