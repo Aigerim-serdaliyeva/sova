@@ -584,9 +584,9 @@
 }
 
 .s-results {
-  &__content {
-    display: flex;
-    justify-content: space-between;
+  .result {
+    margin: 0 auto 20px;
+    text-align: center;
   }
 }
 
