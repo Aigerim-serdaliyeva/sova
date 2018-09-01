@@ -514,16 +514,25 @@
 }
 
 .s-events {
+  .carousel-event {
+    .owl-nav {
+      position: absolute;
+      top: -60px;
+      right: 0;
+    }
+  }
+
   .carousel-events {
-    display: none;
+    margin-bottom: 30px;
+
     .event {
-      width: 80%;
+      width: auto;
     }
   }
 
   &__title {
     font-size: 18px;
-    margin-bottom: 25px;
+    margin: 0 100px 25px 0;
   }
 
   &__content {

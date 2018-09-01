@@ -270,7 +270,7 @@ $(document).ready(function () {
   });
 
   $(".carousel-event").owlCarousel({
-    loop: true,
+    loop: false,
     nav: true,
     dots: false,
     smartSpeed: 500,
@@ -283,15 +283,15 @@ $(document).ready(function () {
   });
 
   $(".carousel-events").owlCarousel({
-    loop: true,
+    loop: false,
     nav: true,
     dots: false,
     smartSpeed: 500,
-    margin: 30,
+    margin: 0,
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, },
-      576: { items: 1, mouseDrag: true,},
+      768: { items: 2, mouseDrag: true,},
     },
   });
 

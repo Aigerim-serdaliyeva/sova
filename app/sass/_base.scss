@@ -388,6 +388,7 @@ h1, h2, h3, h4, h5, h6 {
     &-item {
       float: none;
       display: flex;
+      flex-shrink: 0;
       justify-content: center;
 
       img {
@@ -397,9 +398,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &-nav {
-      // position: absolute;
-      // top: 100%;
-      // right: 0;
       width: 80px;
       margin: 0 auto;
       display: flex;
@@ -407,26 +405,33 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 		&-prev, &-next {
-			// position: absolute;
-			// top: 50%;
 			width: 35px;
       height: 35px;
-      background-image: url('../img/arrow-left.png') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
       background-size: 100% 100% !important;
-      // transform: translateY(-50%);
       outline: 0;
       z-index: 10;
+
+      &.disabled {
+        cursor: default;
+      }
 		}
 
 		&-prev {
-      // left: 0px;
+      background-image: url('../img/arrow-left.png') !important;
+
+      &.disabled {
+        background-image: url('../img/arrow-left-disabled.png') !important;
+      }
 		}
 
 		&-next {
-      // right: 0px;
       background-image: url('../img/arrow-right.png') !important;
+      
+      &.disabled {
+        background-image: url('../img/arrow-right-disabled.png') !important;
+      }
     }
 
     &-dots {
