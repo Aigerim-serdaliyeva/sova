@@ -24,9 +24,9 @@
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <a href="tel:+" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+    <a href="tel:+77012043618" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
 
-    <header class="header">
+    <header class="header inverse">
       <div class="container">
         <div class="header__content">
           <a href="/" class="logo">
@@ -34,45 +34,55 @@
           </a>
 
           <h3 class="header__title">
+            Производство видеоконтента, организация мероприятий
           </h3>
 
           <div class="grow"></div>
 
-          <div class="header__phone d-none d-sm-block">
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
+          <div class="header__aside">
+            <div class="header__top">
+              <div class="header__grafik d-none d-lg-block">24/7</div>
+  
+              <div class="header__phone d-none d-lg-block">
+                <a href="tel:+77012043618" class="text-phone" id="phone_number">+7 701 204-36-18</a>
+              </div>
+              
+              <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>    
+            </div>
+      
+            <nav class="main-menu">
+              <div class="container">
+                <ul>
+                  <li>                                                                       
+                    <a class="link" href="/#work">Портфолио</a>
+                  </li>
+                  <li>
+                    <a class="link" href="/#creat">Виды роликов и цены</a>
+                  </li>
+                  <li>
+                    <a class="link" href="/#comand">О команде</a>
+                  </li>
+                  <li>
+                    <a class="link" href="/#reviews">Отзывы</a>
+                  </li>
+                  <li class="last">
+                    <a class="link" href="/#event">Организация мероприятий</a>
+                  </li>
+                  <li class="d-lg-none">
+                    <a href="tel:+77012043618" class="text-phone" id="phone_number">+7 701 204-36-18</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-
-          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
-
+          
           <button class="hamburger hamburger--elastic hamburger--accessible">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
           </button>
         </div>
-
-        <nav class="main-menu">
-          <div class="container">
-            <ul>
-              <li>
-                <a class="link" href="/#main">Главная</a>
-              </li>
-              <li>
-                <a class="link" href="/#service">Услуги</a>
-              </li>
-              <li class="last">
-                <a class="link" href="/#contact">Контакты</a>
-              </li>
-              <li class="d-lg-none d-xl-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-              </li>
-              <li class="d-lg-none d-xl-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        
       </div>
     </header>
 
@@ -96,25 +106,40 @@
             <img src="./img/logo.png" alt="">
           </a>
 
-          <div class="footer__address"></div>
-
-          <div class="footer__phone">Телефоны:
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
+          <div class="footer__phone">
+            <a href="tel:+77012043618" class="text-phone" id="phone_number">+7 701 204-36-18</a>
           </div>
+
+          <div class="footer__icons">
+            <a href="#"><img src="./img/instagram.png" alt=""></a>
+            <a href="#"><img src="./img/youtube.png" alt=""></a>
+            <a href="#"><img src="./img/facebook.png" alt=""></a>
+          </div>          
+
+          <div class="footer__login">
+            <a href="">m.kaidarova@sovastudio.kz</a> <br>
+            <a href="">a.arykbaev@sovastudio.kz</a>
+          </div>
+
+          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a> 
 
           <div class="footer__comand">Создано командой
             <a href="//marketing-time.kz" target="_blank"><img src="./img/marketing-time.png" alt="MarketingTime"></a>
-          </div>
-        </div>
+          </div>        
+                    
+        </div>  
+        <div class="footer__politika">
+          <a href="" data-remodal-target="politika">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+        </div>      
       </div>
     </footer>
   </div>
   
   <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
-    <button data-remodal-action="close" class="remodal-close"></button>
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
 
-    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+    <div class="remodal__title">Укажите номер телефона, <br>
+      и мы свяжемся с Вами!</div>
 
     <div class="form form--vertical">
       <form action="/mail.php" method="post">
@@ -122,20 +147,52 @@
           <input type="hidden" name="info" value="Обратный звонок">
 
           <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Имя">
+            <input type="text" class="input" name="name" placeholder="Введите имя">
           </div>
 
           <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
             <span class="error-message">Заполните это поле</span>
           </div>
 
           <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
 
-          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+          <div class="form__info">*Ваши данные в безопасности
+            и не будут переданы третьим лицам</div>
         </div>
       </form>
     </div>
+  </div>
+
+  <div class="remodal politika" data-remodal-id="politika" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="politika__title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+    <div class="politika__text"> Соблюдение Вашей конфиденциальности важно для  нашей компании. Поэтому мы разработали Политику Конфиденциальности, которая описывает, как  используется и хранится Ваша информация. Пожалуйста, ознакомьтесь и сообщите нам, если у Вас возникнут какие-либо вопросы.</div>
+
+    <div class="politika__text"> <span>Сбор и использование персональной информации</span> <br>
+    Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица либо связи с ним.
+    От Вас может быть запрошено предоставление персональной информации в любой момент, когда Вы связываетесь с нами.</div>
+
+    <div class="politika__text"> <span>Какую персональную информацию мы собираем</span> <br>
+    Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер телефона, адрес электронной почты и т.д.</div>
+
+    <div class="politika__text"> <span>Как мы используем Вашу персональную информацию</span> <br>
+    Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей: проведения аудита, анализа данных и различных исследований в целях улучшения услуг.
+    Если Вы принимаете участие в розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.</div>
+
+    <div class="politika__text"> <span>Раскрытие информации третьим лицам</span> <br>
+    Мы не раскрываем полученную от Вас информацию третьим лицам.</div>
+
+    <div class="politika__text"> <span>Исключения</span> <br>
+    В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных запросов или запросов от государственных органов на территории РК. Мы также можем раскрывать информацию о Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания правопорядка или иных общественно важных случаях.
+    В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.</div>
+
+    <div class="politika__text"> <span>Защита персональной информации</span> <br>
+    Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного доступа, раскрытия, изменения и уничтожения.</div>
+
+    <div class="politika__text"> <span>Соблюдение Вашей конфиденциальности на уровне компании</span> <br>
+    Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения конфиденциальности.  </div>
+
   </div>
 
   <script src="./js/libs.min.js"></script>
