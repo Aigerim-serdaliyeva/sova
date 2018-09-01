@@ -153,6 +153,8 @@
       
       .review {
         display: block;
+        margin-bottom: 0;
+
         img {
           margin: 0 auto 10px;
         }
@@ -169,6 +171,11 @@
           margin: 0 auto;
           display: block;
         }
+      }
+
+      .owl-nav {
+        position: static;
+        margin-bottom: 30px;
       }
     }
 
