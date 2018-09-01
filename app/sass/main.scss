@@ -475,19 +475,19 @@
 
   .review {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     margin-bottom: 40px;
 
     img {
-      margin-right: 25px;
+      margin: 0 25px 0 0;
       flex-shrink: 0;
     }
 
     &__content {
-      max-width: 455px;
-      margin-right: 80px;
+      // max-width: 455px;
+      flex-grow: 1;
+      margin-right: 100px;
     }
 
     &__name {
@@ -500,6 +500,16 @@
       font-style: italic;
       margin-bottom: 15px;
     }
+
+    .video__label {
+      flex-shrink: 0;
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    top: 140px;
+    right: 330px;
   }
 }
 
