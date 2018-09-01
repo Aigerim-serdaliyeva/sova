@@ -231,6 +231,31 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-command").owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, },
+      768: { items: 2, mouseDrag: true,},
+    },
+  });
+
+  $(".carousel-command-images").owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, }
+    },
+  });
+
   $(".carousel-review").owlCarousel({
     loop: true,
     nav: true,

@@ -367,7 +367,7 @@
       font-weight: 500;
       margin-right: 20px;
     }
-    
+
     .button {
       box-shadow: 2.5px 4.33px 8.73px 0.27px rgba(33, 30, 27, 0.85);
       width: 185px;
@@ -389,7 +389,6 @@
 
   .comand {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
 
@@ -397,10 +396,12 @@
       width: 164px;
       height: 103px;
       flex-shrink: 0;
+      margin-right: 30px;
     }
 
     &__block {
-      max-width: 455px;
+      margin-right: 20px;
+      flex-grow: 1;
     }
 
     &__name {
@@ -421,16 +422,18 @@
     .button {
       font-size: 12px;
       padding: 10px;
-      width: 185px !important;
+      width: 185px;
+      align-self: center;
+      flex-shrink: 0;
     }
 
-    &__2 {
-      margin-bottom: 20px;
-      .button {
-        margin: 10px auto 0;
-        display: block;
-      }
-    }
+    // &__2 {
+    //   margin-bottom: 20px;
+    //   .button {
+    //     margin: 10px auto 0;
+    //     display: block;
+    //   }
+    // }
 
     &__header {
       display: flex;
@@ -438,6 +441,31 @@
       .comand__img {
         margin-right: 15px;
       }
+    }
+  }
+
+  .comanda {
+    display: inline-block;
+    position: relative;
+
+    &:hover {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($accent, 0.5);
+      }
+    }
+  }
+
+  .carousel-command-images {
+    margin-top: 30px;
+
+    .owl-nav {
+      margin-top: 20px;
     }
   }
 }

@@ -89,20 +89,25 @@
 
     &-comand {
       .comand {
-        display: block;
+        flex-direction: column;
         margin-bottom: 25px;
+
         &__img {
           margin: 0 auto 10px;
         }
+
         &__block {
-          margin-bottom: 15px;
+          margin: 0 0 15px;
         }
+
         &__name {
           text-align: center;
         }
+
         &__summary {
           text-align: center;
         }
+
         .button {
           margin: 0 auto;
           display: block;
@@ -221,7 +226,7 @@
         display: block;
         margin-bottom: 20px;
       }
-      
+
       &__quiz {
         &__title {
           font-size: 16px;
@@ -315,9 +320,9 @@
 
     &-comand {
       &__img {
-        img {
-          width: 130px;
-          height: 100%;
+        img {          
+          // width: 130px;
+          // height: 100%;
         }
       }
     }
