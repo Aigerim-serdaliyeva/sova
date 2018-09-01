@@ -255,6 +255,35 @@
       }
     }
   }
+
+  .rolik {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__content {
+      display: block;
+    }
+
+    &__block {
+      max-width: none;
+      margin: 0 0 30px;
+    }
+
+    .form {
+      max-width: none;
+      width: auto;
+      margin: 0 -35px -10px -35px;
+    }
+
+    .remodal {
+      &-close {
+        &--white {
+          color: #000;
+        }
+      }
+    }
+  }
 }
 
 // ≥576px
@@ -297,33 +326,9 @@
     }
   }
 
-  .rolik {
-    &__title {
-      font-size: 20px;
-    }
-
-    &__content {
-      display: block;
-    }
-
-    &__block {
-      margin-bottom: 30px;
-      max-width: none;
-      padding-right: 0;
-    }
-
+  .rolik {    
     .form {
-      max-width: none;
-      width: auto;
       margin: 0 -20px -20px -20px;
-    }
-
-    .remodal {
-      &-close {
-        &--white {
-          color: #000;
-        }
-      }
     }
   }
 

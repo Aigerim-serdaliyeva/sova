@@ -308,7 +308,7 @@
 
   .carousel-creat {
     display: none;
-  }
+  }  
 
   .creat {
     width: 164px;
@@ -719,14 +719,19 @@
 }
 
 .rolik {
-  max-width: 750px;
+  max-width: 800px;
+  padding: 35px 35px 10px;
+
   &__content {
     display: flex;
   }
+
   &__block {
-    max-width: 488px;
-    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
   }
+
   &__title {
     font-size: 24px;
     font-family: Montserrat, serif;
@@ -735,9 +740,11 @@
     padding-left: 5px;
     font-weight: normal;
   }
+
   &__text {
     margin-bottom: 20px;
   }
+
   ul {
     margin: 0 0 20px 0;
     padding: 0;
@@ -745,6 +752,7 @@
       list-style: none;
     }
   }
+
   &__sum, &__minut {
     position: relative;
     padding-left: 30px;
@@ -757,25 +765,53 @@
       left: 0;
     }
   }
+
   &__sum {
     &::before {
       background-image: url("../img/price-tag.png");
     }
   }
+
   &__minut {
     &::before {
       background-image: url("../img/time.png");
     }
   }
+
   &__result {
     font-size: 12px;
     font-style: italic;
+    flex-grow: 1;
   }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    .accent {
+      font-size: 12px;
+      font-weight: 500;
+      word-wrap: break-word;
+      width: calc(50% - 50px);
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+
+    .owl-nav {
+      margin: 0 10px;
+    }
+  }
+
   .form {
     width: 262px;
+    flex-shrink: 0;
     background-image: url("../img/modal-ornament.jpg");
     background-position: center center;
-    margin: -35px;
+    margin: -35px -35px -10px 0;
     padding: 70px 18px;
 
     &__vopros {
