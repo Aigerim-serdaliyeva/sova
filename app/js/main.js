@@ -160,6 +160,39 @@ $(document).ready(function () {
     }
   });
 
+  $(".s-work video").on('play', function() {
+    $(this).closest('.video__container').find('.video__title').hide();
+  });
+
+  $(".s-work video").on('pause', function() {
+    $(this).closest('.video__container').find('.video__title').show();
+  });
+
+  $(".video__play").click( function () {
+    var $this = $(this);
+    var $label = $this.closest(".video__label");
+    var $video = $label.find("video");
+
+    if (!$video.find('source').attr('src')) {
+      $video.find('source').attr('src', $label.data('video'));
+    }
+    $video[0].load();
+    $video[0].play();
+    $this.closest(".video__img").hide();
+  });
+
+  $(".video__preview").click( function () {
+    var $this = $(this);
+    var $container = $this.closest(".video__container");
+    var imgUrl = $this.find('img').attr('src');
+    
+    $this.closest(".owl-item").siblings(".owl-item").find(".video__preview").removeClass("active");
+    $this.addClass("active");
+    $container.find('.video__title').show();
+    $container.find('video').attr('src', $this.data('video'));
+    $container.find('.video__img').css('background-image', "url('" + imgUrl + "')").show();
+  });
+
   var $questionModal = $(".question-modal");
   $(".perehod").click(function(e) {
     e.preventDefault();
@@ -213,16 +246,18 @@ $(document).ready(function () {
     loop: false,
     nav: true,
     dots: false,
+    mouseDrag: false,
     smartSpeed: 500,
     margin: 15,
     navText: ['', ''],
     responsive: {
-      0: { items: 3, mouseDrag: false },
-      576: { items: 4, mouseDrag: true },
-      768: { items: 3, mouseDrag: true },
-      992: { items: 3, mouseDrag: true },
-      1200: { items: 4, mouseDrag: true },
-    },
+      0: { items: 2 },
+      400: { items: 3 },
+      576: { items: 4 },
+      768: { items: 3 },
+      992: { items: 3 },
+      1200: { items: 4 },
+    }
   });
 
   $(".carousel-creat").owlCarousel({
@@ -284,8 +319,8 @@ $(document).ready(function () {
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, },
-      576: { items: 1, mouseDrag: true,},
+      0: { items: 2, mouseDrag: false, },
+      576: { items: 2, mouseDrag: true,},
     },
   });
 
