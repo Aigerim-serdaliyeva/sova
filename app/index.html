@@ -9,6 +9,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P8P2HQC');</script>
 <!-- End Google Tag Manager -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> temp
   <meta charset="utf-8">
 
   <title>Производство видеоконтента, организация мероприятий</title>
@@ -33,7 +37,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <a href="tel:+77012043618" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+
+    <div class="callback__wrapper">
+      <div class="callback__items">
+        <div class="callback__item">
+          <a target="_parent" href="https://api.whatsapp.com/send?phone=77012043618" id="whatsapp">
+            <i class="callback__icon callback__whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="callback__item">
+          <a href="tel:+77012043618" id="callMe" class="call-me">
+            <i class="callback__icon callback__phone"></i>  Позвонить
+          </a>
+        </div>
+      </div>
+    </div>
 
     <header class="header inverse">
       <div class="container">
@@ -134,47 +152,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="section s-work" id="work">
       <div class="container">
         <div class="section-title">Наши работы</div>
-
+        
         <div class="row">
           <div class="col-md-6">
             <div class="video__container video__container--first">
               <div class="video__title">Бизнес-ролики</div> 
-              <div class="video__label">
+              <div class="video__label" data-video="./videos/business-1.mp4">
                 <video controls>
-                  <source src="./videos/movie.mp4" type="video/mp4">
-                  Your browser does not support HTML5 video.
+                  <source src="" type="video/mp4">
                 </video>
-                <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__img" style="background-image: url('./img/business-1.jpg')">
                   <div class="video__play"></div>
                 </div>
               </div>
               <div class="carousel-work owl-carousel">
-                <div class="video__preview active"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview active" data-video="./videos/business-1.mp4"><img src="./img/business-1.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/business-2.mp4"><img src="./img/business-2.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/business-3.mp4"><img src="./img/business-3.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/business-4.mp4"><img src="./img/business-4.jpg" alt=""></div>
               </div>
             </div>            
           </div>
           <div class="col-md-6">
             <div class="video__container">
               <div class="video__title">Отчетные ролики с мероприятий</div>
-              <div class="video__label">
+              <div class="video__label" data-video="./videos/ot4et-1.mp4">
                 <video controls>
-                  <source src="./videos/movie.mp4" type="video/mp4">
+                  <source src="" type="video/mp4">
                   Your browser does not support HTML5 video.
                 </video>
-                <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__img" style="background-image: url('./img/ot4et-1.jpg')">
                   <div class="video__play"></div>
                 </div>
               </div>
               <div class="carousel-work owl-carousel">
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
-                <div class="video__preview"><img src="./img/video-mini.jpg" alt=""></div>
+                <div class="video__preview active" data-video="./videos/ot4et-1.mp4"><img src="./img/ot4et-1.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/ot4et-2.mp4"><img src="./img/ot4et-2.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/ot4et-3.mp4"><img src="./img/ot4et-3.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/ot4et-4.mp4"><img src="./img/ot4et-4.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/ot4et-5.mp4"><img src="./img/ot4et-5.jpg" alt=""></div>
+                <div class="video__preview" data-video="./videos/ot4et-6.mp4"><img src="./img/ot4et-6.jpg" alt=""></div>
               </div> 
             </div>            
           </div>
@@ -421,10 +438,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="review__summary">Директор продюсерского центра "KS PRODUCTION" </div>
               <div class="review__text">Рекомендую компанию "Сова" за их оперативность и профессионализм. Мы проводили вечер под названием «Магия Красоты», где ребята из "Совы" снимали отчет. Они выпустили его через 2 часа после завершения мероприятия! Это невероятно! Всем советуем. Мы за качество и скорость!  </div>
             </div>
+<<<<<<< HEAD
             <div class="video__label">
               <video controls>
                 <source src="./videos/movie.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
+=======
+            <div class="video__label" data-video="./videos/alihan-mustaev.mp4">
+              <video controls>
+                <source src="" type="video/mp4">
+>>>>>>> temp
               </video>
               <div class="video__img" style="background-image: url('./img/video.jpg')">
                 <div class="video__play"></div>
@@ -439,10 +462,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="review__summary">Тренер по боевым искусствам с 30-летним стажем, специалист по наскальным рисункам.</div>
               <div class="review__text">С ребятами из студии "Сова" я встретился через Абзала на первом уроке игры на домбре. Мы стали рассказывать друг другу о себе. И Абзал спросил, смогу ли я рассказать о себе в камеру. Я ответил, что да ! Через несколько дней я познакомился с Меруерт. Тогда же мне дали микрофон, поставили камеру. Я сел удобнее и Читать далее</div>
             </div>
+<<<<<<< HEAD
             <video width="360" height="175" controls>
               <source src="movie.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
             </video>
+=======
+            <div class="video__label" data-video="./videos/sanjar-jubanov.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
+>>>>>>> temp
           </div>
 
           <div class="review">
@@ -452,10 +487,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="review__summary">куратор галереи "Арт Перекресток"</div>
               <div class="review__text">Художественная галерея "Арт Перекресток" выражает свою благодарность sova_studio_production. Позитивный настрой и профессионализм в этой команде позволяет реализовывать творческие проекты на высоком уровне. Полное сопровождение клиента способствует плодотворному сотрудничеству. Надеемся и в будущем поддерживать дружеские и деловые взаимоотношения.</div>
             </div>
+<<<<<<< HEAD
             <video width="360" height="175" controls>
               <source src="movie.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
             </video>
+=======
+            <div class="video__label" data-video="./videos/naregeev.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
+>>>>>>> temp
           </div>
 
           <div class="review">
@@ -465,10 +512,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="review__summary">флейтистка, участница квартета флейт "Nami"</div>
               <div class="review__text">Благодаря "Sova studio production" мы успешно провели концерт нашего флейтового квартета "Nami". "Sova studiо production" не только помогли нам с организацией, но и сняли великолепный ролик с концерта. Сотрудники студии работают быстро и качественно, учитывая пожелания артиста, и умея показать его лучшие стороны. Большое им за это спасибо!</div>
             </div>
+<<<<<<< HEAD
             <video width="360" height="175" controls>
               <source src="movie.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
             </video>
+=======
+            <div class="video__label" data-video="./videos/inkar-jubanova.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
+>>>>>>> temp
           </div>
 
           <div class="review">
@@ -481,10 +540,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 Хочется отметить профессионализм и самоотдачу со стороны "Совы". А также позитивный настрой, гибкость и увлеченность. Это очень важно!!!
                 Жду новых совместных свершений!!!</div>
             </div>
-            <video width="360" height="175" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-            </video>
+            <div class="video__label" data-video="./videos/uri-leonov.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
           </div>
 
           <div class="review">
@@ -494,10 +558,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <!-- <div class="review__summary"></div> -->
               <div class="review__text">Совместные проекты с коллективом "Сова студия продакшн" принесли нам очень плодотворные результаты. Организация концерта прошла на высшем уровне, готовый видеоотчет был выполнен быстро и качественно. Ребята заинтересовали нас своим профессионализмом и креативным подходом. Этнофольклорный ансамбль "Туран" желает молодой команде творческих успехов, достижения поставленных целей, реализации всех идей и проектов и много благодарных клиентов и партнеров.      </div>
             </div>
-            <video width="360" height="175" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-            </video>
+            <div class="video__label" data-video="./videos/ot4et-4.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
           </div>
 
           <div class="review">
@@ -507,10 +576,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="review__summary">музыковед</div>
               <div class="review__text">Работы "Совы", на мой взгляд, заслуживают высокой оценки. Примечательно то, что ребята предлагают очень широкий спектр услуг – видеопроизводство, организация концертов, мероприятий, мастер- классов. Материалы, предоставленные компанией "Сова" можно смело использовать на телевидении. Очень приятно и хорошо, что организация мастер-классов и концертов является хорошей площадкой для знакомства между музыкантами, художниками, писателями.</div>
             </div>
-            <video width="360" height="175" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-            </video>
+            <div class="video__label" data-video="./videos/ot4et-6.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
           </div>
 
           <div class="review">
@@ -523,10 +597,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 Спасибо, ребята, большое, до новых встреч и совместных проектов!      </div>
             </div>
-            <video width="360" height="175" controls>
-              <source src="movie.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-            </video>
+            <div class="video__label" data-video="./videos/HaZaR.mp4">
+              <video width="360" height="175" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="video__img" style="background-image: url('./img/video.jpg')">
+                <div class="video__play"></div>
+              </div>
+            </div>
           </div>                   
           
         </div>
@@ -566,8 +645,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="s-events__title">С участием известных артистов из Казахстана, покоривших сцены США, (Нью-Йорк) - "Карнеги Холл"; <br>
           Великобритании, (Лондон) - "Альберт Холл"; Германии, (Берлин) - "Концерт Хаус"; России, (Москва) - "Кремль".</div>
 
+<<<<<<< HEAD
         <div class="owl-carousel carousel-event">
           <div class="s-events__content">
+=======
+        <div class="owl-carousel carousel-event d-none d-lg-block">
+          <div class="s-events__item">
+>>>>>>> temp
             <div class="event">
               <div class="event__img">
                 <img src="./img/event-1.jpg" alt="">
@@ -578,6 +662,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="event__text">Оригинальность и самобытность коллектива становятся очевидны с первых нот композиций в исполнении ансамбля. Используя возможности световой и звуковой техники, музыканты легко воссоздают на сцене образы прошлого и настоящего.</div>
               </div>
             </div>
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-3.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Этнофьюжн группа “Хазар”</div>
+                <div class="event__text">Сочетание традиционной культуры и новой модной музыки. Оригинальная современная интерпретация полюбившихся мотивов.</div>
+              </div>
+            </div>
+          </div>
+<<<<<<< HEAD
+=======
+          <div class="s-events__item">
             <div class="event">
               <div class="event__img">
                 <img src="./img/event-2.jpg" alt="">
@@ -591,15 +688,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="event">
               <div class="event__img">
-                <img src="./img/event-3.jpg" alt="">
-              </div>
-              <div class="event__block">
-                <div class="event__title">Этнофьюжн группа “Хазар”</div>
-                <div class="event__text">Сочетание традиционной культуры и новой модной музыки. Оригинальная современная интерпретация полюбившихся мотивов.</div>
-              </div>
-            </div>
-            <div class="event">
-              <div class="event__img">
                 <img src="./img/event-4.jpg" alt="">
               </div>
               <div class="event__block">
@@ -608,6 +696,89 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
             </div>
           </div>
+          <div class="s-events__item">            
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-5.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Neo-Ethno-Folk <br>
+                    дует Аркайым</div>
+                <div class="event__text">Основной идеей создания дуэта послужило стремление воссоздать звучание старинных, архаичных инструментов в совершенно новой интерпретации, найти новые способы воспроизведения фольклорно-этнографических произведений и форм в исполнении наших современников.</div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-6.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Группа «Sax Jam»</div>
+                <div class="event__text">Группа «Sax Jam» - уникальный проект, состоящий из очаровательных саксофонисток и вокалисток. Группа -  постоянный участник различных мероприятий и фестивалей.</div>
+              </div>
+            </div>                        
+          </div>
+        </div>
+
+        <div class="owl-carousel carousel-events d-lg-none">
+          <div class="event">
+            <div class="event__img">
+              <img src="./img/event-1.jpg" alt="">
+            </div>
+            <div class="event__block">
+              <div class="event__title">Этнофольклорный ансамбль 
+                Туран”</div>
+              <div class="event__text">Оригинальность и самобытность коллектива становятся очевидны с первых нот композиций в исполнении ансамбля. Используя возможности световой и звуковой техники, музыканты легко воссоздают на сцене образы прошлого и настоящего.</div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event__img">
+              <img src="./img/event-2.jpg" alt="">
+            </div>
+            <div class="event__block">
+              <div class="event__title">MEJ - модерн этно-джаз
+                группа «STEPPE SONS»
+                - «Сыновья Степи»</div>
+              <div class="event__text">Используя возможности свето-видео сопровождения и звукоусиливающей техники, «Сыновья Степи» создают образы и незабываемые картины прошлого и настоящего, вы прочувствуете настоящий дух кочевника и тонкий стиль джазового исполнения!  </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event__img">
+              <img src="./img/event-3.jpg" alt="">
+            </div>
+            <div class="event__block">
+              <div class="event__title">Этнофьюжн группа “Хазар”</div>
+              <div class="event__text">Сочетание традиционной культуры и новой модной музыки. Оригинальная современная интерпретация полюбившихся мотивов.</div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event__img">
+              <img src="./img/event-4.jpg" alt="">
+            </div>
+            <div class="event__block">
+              <div class="event__title">Юрий Леонов</div>
+              <div class="event__text">Юрий Леонов - профессиональный музыкант. Игре на барабанах он учился сначала в Алматы, а потом в Индии.Там он освоил игру на национальных инструментах - таблах. Также Юрий известен как участник фолк-группы «Paradox» и музыкальной группы «Бугарабу».</div>
+            </div>
+          </div>
+          <div class="event">
+              <div class="event__img">
+                <img src="./img/event-5.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Neo-Ethno-Folk <br>
+                    дует Аркайым</div>
+                <div class="event__text">Основной идеей создания дуэта послужило стремление воссоздать звучание старинных, архаичных инструментов в совершенно новой интерпретации, найти новые способы воспроизведения фольклорно-этнографических произведений и форм в исполнении наших современников.</div>
+              </div>
+            </div>
+            <div class="event">
+              <div class="event__img">
+                <img src="./img/event-6.jpg" alt="">
+              </div>
+              <div class="event__block">
+                <div class="event__title">Группа «Sax Jam»</div>
+                <div class="event__text">Группа «Sax Jam» - уникальный проект, состоящий из очаровательных саксофонисток и вокалисток. Группа -  постоянный участник различных мероприятий и фестивалей.</div>
+              </div>
+            </div>
+>>>>>>> temp
         </div>
 
         <div class="form form--horizontal wow slideInUp">
@@ -747,14 +918,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
           <div class="footer__icons">
-            <a href="#"><img src="./img/instagram.png" alt=""></a>
-            <a href="#"><img src="./img/youtube.png" alt=""></a>
-            <a href="#"><img src="./img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/sova_studio_production" target="_blank"><img src="./img/instagram.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCYoZKHVuOGwYr4tnLPN7tyQ" target="_blank"><img src="./img/youtube.png" alt=""></a>
+            <a href="https://www.facebook.com/Sovastudioproduction" target="_blank"><img src="./img/facebook.png" alt=""></a>
           </div>          
 
           <div class="footer__login">
-            <a href="">m.kaidarova@sovastudio.kz</a> <br>
-            <a href="">a.arykbaev@sovastudio.kz</a>
+            <a href="mailto:m.kaidarova@sovastudio.kz">m.kaidarova@sovastudio.kz</a> <br>
+            <a href="mailto:a.arykbaev@sovastudio.kz">a.arykbaev@sovastudio.kz</a>
           </div>
 
           <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a> 
@@ -765,7 +936,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     
         </div>  
         <div class="footer__politika">
-          <a href="" data-remodal-target="politika">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+          <a href="#" data-remodal-target="politika">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
         </div>      
       </div>
     </footer>

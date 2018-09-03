@@ -88,6 +88,10 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], fun
     'app/files/*'
   ]).pipe(gulp.dest('dist/files'));
 
+  var buildSvg = gulp.src([
+    'app/svg/*'
+  ]).pipe(gulp.dest('dist/svg'));
+
   var buildCss = gulp.src([
     'app/css/libs.min.css',
     'app/css/main.min.css'

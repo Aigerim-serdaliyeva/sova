@@ -167,9 +167,9 @@
         &__summary {
           text-align: center;
         }
-        video {
+        
+        .video__label {
           margin: 0 auto;
-          display: block;
         }
       }
 
@@ -305,8 +305,8 @@
     display: inline;
   }
 
-  .call-me {
-    display: flex;
+  .callback__wrapper {
+    display: block;
   }
 
   .header {
