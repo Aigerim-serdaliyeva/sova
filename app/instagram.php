@@ -21,37 +21,44 @@ function rudr_instagram_api_curl_connect( $api_url ){
 
 // if you want to display everything the function returns
 function getInstagramPhotos() {
-    $access_token = '5596667229.648fec4.85acfb2bd4f24b57abe685e5c3458369';
+    $access_token = '6276296079.3a187f4.cf4094f9dca1463baf68cbb0867eb3ef';
     $user_photos = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/users/self/media/recent/?access_token=" . $access_token);
 
     $html = '';
     foreach ($user_photos->data as $post) {
-        $html .= '<div class="insta">
-            <div class="insta__head">
-                <a class="insta__logo" href="https://instagram.com/bioelite.kz" data-ios-link="user?username=bioelite.kz" data-log-event="profilePhotoClick" target="_blank">
-                    <img src="' . $post->user->profile_picture . '" />
-                </a>
-                <a class="insta__name" href="https://instagram.com/bioelite.kz" data-ios-link="user?username=bioelite.kz" data-log-event="profilePhotoClick" target="_blank">
-                    ' . $post->user->username . '
-                </a>
-                <a class="insta__btn" href="https://instagram.com/bioelite.kz" data-ios-link="user?username=bioelite.kz" data-log-event="profilePhotoClick" target="_blank">
-                    Посмотреть профиль
-                </a>
-            </div>
-            <div class="insta__body">
-                <img src="' . $post->images->low_resolution->url . '" />
-            </div>
-            <div class="insta__foot">
-                <div class="insta__likes">
-                <i class="fa fa-heart"></i>
-                ' . $post->likes->count .' отметок "Нравится"
-                </div>
-                <div class="insta__caption">
-                ' . mb_substr($post->caption->text, 0, 300) . '
-                </div>
-            </div>
-        </div>';
+      $body = '<img src="' . $post->images->low_resolution->url . '" />';
+
+      if (property_exists($post, 'videos')) {
+        $body = '<video controls poster="' . $post->images->low_resolution->url . '"><source src="' . $post->videos->low_resolution->url . '" type="video/mp4"></video>';
+      }
+
+      $html .= '<div class="insta">
+          <div class="insta__head">
+              <a class="insta__logo" href="https://instagram.com/sova_studio_production" data-ios-link="user?username=sova_studio_production" data-log-event="profilePhotoClick" target="_blank">
+                  <img src="' . $post->user->profile_picture . '" />
+              </a>
+              <a class="insta__name" href="https://instagram.com/sova_studio_production" data-ios-link="user?username=sova_studio_production" data-log-event="profilePhotoClick" target="_blank">
+                  ' . $post->user->username . '
+              </a>
+              <a class="insta__btn" href="https://instagram.com/sova_studio_production" data-ios-link="user?username=sova_studio_production" data-log-event="profilePhotoClick" target="_blank">
+                  Посмотреть профиль
+              </a>
+          </div>
+          <div class="insta__body">
+            ' . $body . '
+          </div>
+          <div class="insta__foot">
+              <div class="insta__likes">
+              <i class="fa fa-heart"></i>
+              ' . $post->likes->count .' отметок "Нравится"
+              </div>
+              <div class="insta__caption">
+              ' . mb_substr($post->caption->text, 0, 300) . '
+              </div>
+          </div>
+      </div>';
     }
     return $html;
 }
 
+echo getInstagramPhotos();

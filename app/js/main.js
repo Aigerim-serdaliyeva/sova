@@ -242,6 +242,27 @@ $(document).ready(function () {
     $questionModal.find('.question').removeClass('has-error').addClass('d-none').filter('#question-1').removeClass('d-none');
   });
 
+  var $instagram = $('.carousel-instagram');
+  $.get('/instagram.php', function(data) {
+    $instagram.html(data);
+    $instagram.owlCarousel({
+      loop: false,
+      nav: true,
+      dots: false,
+      mouseDrag: false,
+      smartSpeed: 500,
+      margin: 15,
+      navText: ['', ''],
+      responsive: {
+        0: { items: 1 },
+        // 576: { items: 2 },
+        768: { items: 2 },
+        992: { items: 3 },
+        // 1200: { items: 4 }
+      }
+    }); 
+  });
+
   $(".carousel-work").owlCarousel({
     loop: false,
     nav: true,
@@ -337,7 +358,6 @@ $(document).ready(function () {
       767: { items: 4, mouseDrag: true,},
     },
   });
-
 
   $(".carousel-certificates").owlCarousel({
     loop: true,

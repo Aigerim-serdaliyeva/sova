@@ -624,9 +624,10 @@
 }
 
 .s-results {
-  .result {
-    margin: 0 auto 20px;
-    text-align: center;
+  .carousel-instagram {
+    .owl-nav {
+      margin-top: 20px;
+    }
   }
 }
 
