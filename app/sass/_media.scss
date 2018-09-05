@@ -366,6 +366,26 @@
       }
     }
 
+    &-reviews {
+      .review {
+        .video__label {
+          display: none;
+        }
+      }
+    }
+
+    &-events {
+      &__title {
+        display: none;
+      }
+
+      .event {
+        &__text {
+          display: none;
+        }
+      }
+    }
+
     &-thanks {
       padding: 120px 0 50px;
       
