@@ -260,19 +260,6 @@ $(document).ready(function () {
     }
   });
 
-  $(".carousel-creat").owlCarousel({
-    loop: true,
-    nav: true,
-    dots: false,
-    smartSpeed: 500,
-    margin: 30,
-    navText: ['', ''],
-    responsive: {
-      0: { items: 1, mouseDrag: false, },
-      576: { items: 2, mouseDrag: true,},
-    },
-  });
-
   $(".carousel-command").owlCarousel({
     loop: false,
     nav: true,

@@ -320,12 +320,9 @@
 .s-creat {
   background-image: url("../img/create-back.jpg");
 
-  .carousel-creat {
-    display: none;
-  }  
-
-  .creat {
-    width: 164px;
+  .creat {    
+    max-width: 164px;
+    width: 100%;
     height: 92px;
     border: 1px solid $accent;
     position: relative;
