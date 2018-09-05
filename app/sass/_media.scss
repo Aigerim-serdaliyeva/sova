@@ -252,15 +252,6 @@
     }
 
     &-creat {
-      &__content {
-        display: none;        
-      }
-
-      .carousel-creat {
-        display: block;
-        margin-bottom: 20px;
-      }
-
       &__quiz {
         &__title {
           font-size: 16px;
@@ -358,6 +349,40 @@
       &__title {
         font-size: 27px;
         margin-bottom: 50px;
+      }
+    }
+
+    &-creat {
+      .creat {
+        font-size: 12px;
+      }
+    }
+
+    &-comand {
+      .comand {
+        &__text {
+          display: none;
+        }
+      }
+    }
+
+    &-reviews {
+      .review {
+        .video__label {
+          display: none;
+        }
+      }
+    }
+
+    &-events {
+      &__title {
+        display: none;
+      }
+
+      .event {
+        &__text {
+          display: none;
+        }
       }
     }
 
