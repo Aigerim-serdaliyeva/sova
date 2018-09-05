@@ -261,8 +261,11 @@
 
 
 .s-main {
+  position: relative;
+  z-index: 0;
   padding-top: 150px;
-  background-image: url('../img/main-back.jpg');
+  overflow: hidden;
+  // background-image: url('../img/main-back.jpg');
 
   &__title {
     font-size: 36px;
@@ -272,6 +275,27 @@
     font-weight: normal;
     max-width: 940px;
     text-align: center;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: none;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.6);
+    z-index: -1;
   }
 }
 
