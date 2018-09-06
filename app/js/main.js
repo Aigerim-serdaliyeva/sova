@@ -184,7 +184,7 @@ $(document).ready(function () {
   $(".video__preview").click( function () {
     var $this = $(this);
     var $container = $this.closest(".video__container");
-    var imgUrl = $this.find('img').attr('src');
+    var imgUrl = $this.data('image');
     
     $this.closest(".owl-item").siblings(".owl-item").find(".video__preview").removeClass("active");
     $this.addClass("active");
